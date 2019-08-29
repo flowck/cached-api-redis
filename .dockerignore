@@ -1,0 +1,5 @@
+# Ignore files
+node_modules
+run_redis.sh
+setup_redis_dev.sh
+README.md
