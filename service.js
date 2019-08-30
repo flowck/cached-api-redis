@@ -2,14 +2,20 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
 const redis = require("./caching/redis");
+const responses = require("./responses");
+const caching = require("./middlewares/caching");
 
+/**
+ * Init the service
+*/
 const service = express();
-
 redis.connect();
 
 // Middlewares
 service.use(cors());
-service.use(morgan({ format: "combined" }))
+service.use(morgan({ format: "tiny" }));
+service.use(caching);
+service.use(responses);
 
 const PORT = process.env.PORT || 4040;
 service.listen(PORT, () => {
