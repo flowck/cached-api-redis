@@ -1,4 +1,4 @@
-# Ignore files
+# Ignore the following files: 
 node_modules
 run_redis.sh
 setup_redis_dev.sh

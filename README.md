@@ -4,6 +4,8 @@
 
 Implement a minial API with a caching layer powered by Redis in a containerized environment.
 
+* Fault tolerant: It handle gracefully connection errors with the caching layer.
+
 ## How to setup and run in development mode
 
 1 - Clone the repo:
