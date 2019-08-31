@@ -2,8 +2,10 @@
 
 ## Goal
 
-Implement a minial API with a caching layer powered by Redis in a containerized environment.
+Implement a minimal API with a caching layer powered by Redis in a containerized environment.
 
+* Reduce database hits
+* Reduce response time
 * Fault tolerant: It handle gracefully connection errors with the caching layer.
 
 ## How to setup and run in development mode
