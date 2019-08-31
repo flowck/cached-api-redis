@@ -1,6 +1,6 @@
 # Cached API - Redis
 
-## Goal
+## Goals
 
 Implement a minimal API with a caching layer powered by Redis in a containerized environment.
 
