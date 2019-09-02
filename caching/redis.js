@@ -10,7 +10,7 @@ module.exports.connect = () => {
   // connect to the redis server
   client.on("error", (err) => {
     // Log the error instead of shutting down 
-    console.error("Caching layer error: ", err);
+    console.error("Caching layer error: ");
   });
 
   // Once connected to REDIS
