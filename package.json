@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup:redis": "./setup_redis_dev.sh",
-    "layer:redis": "./run_redis.sh",
-    "dev": "nodemon service.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup:redis": "./scripts/setup_redis_dev.sh",
+    "layer:redis": "./scripts/run_redis.sh",
+    "dev": "nodemon src/application.js",
+    "test": "jest"
   },
   "author": "Firmino",
   "license": "MIT",

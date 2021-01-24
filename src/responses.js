@@ -45,6 +45,5 @@ router.get("/sensors/:id", (req, res) => {
   });
 });
 
-
 // Export the router object
 module.exports = router;
